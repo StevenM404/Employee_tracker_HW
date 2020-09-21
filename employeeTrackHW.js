@@ -28,8 +28,7 @@ function trackerChoices(){
             "View All Departments",
             "Add Employee",
             "Add Department",
-            "Add Role",
-            "Update Employee Role"
+            "Add Role"
         ]
     }).then((answer) => {
         switch (answer.choices) {
@@ -55,10 +54,6 @@ function trackerChoices(){
 
             case "Add Role":
                 addRole();
-                break;
-
-            case "Update Employee Role":
-                updateEmployeeRole();
                 break;
         };
     });
